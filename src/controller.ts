@@ -6,7 +6,7 @@ import generateRandomAnswer from "../answers";
 
 function getAnswer(req: IncomingMessage, res: ServerResponse) {
   const answer: string = generateRandomAnswer();
-  res.writeHead(200, { "Content-Type": "application/json" });
+  res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify({ answer }));
 }
 

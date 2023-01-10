@@ -4,19 +4,18 @@ import { getAnswer } from "./controller";
 const PORT: number = 3000;
 
 const server = http.createServer((req, res) => {
-  const headers = {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "OPTIONS, GET",
-  };
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET");
 
   if (req.method === "OPTIONS") {
-    res.writeHead(204, headers);
+    console.log("options");
     res.end();
     return;
   }
 
   if (req.method === "GET") {
-    res.writeHead(200, headers);
+    console.log("get");
+    console.log(res.getHeaders());
     return getAnswer(req, res);
   }
 });
