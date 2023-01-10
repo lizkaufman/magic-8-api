@@ -1,6 +1,7 @@
 # Magic 8 Ball API
 
-View the landing page here: https://magic-8-ball-api.onrender.com/
+https://magic-8-ball-api.onrender.com/
+
 Deployed API URL: https://magic-8-api.onrender.com/
 
 I built this API to provide an alternative to the [kanye.rest](https://kanye.rest/) API we usually use to first introduce bootcampers to using `fetch` at the [School of Code](https://www.schoolofcode.com/). We used kanye.rest because of its ease of use and simplicity of response structure, but for obvious reasons, thanks to his actions, it unfortunately doesn't seem like a good idea to use from now on!
